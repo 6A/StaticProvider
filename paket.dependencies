@@ -1,0 +1,9 @@
+storage: none
+
+source https://api.nuget.org/v3/index.json
+
+nuget FSharp.Compiler.Service 17.0.1
+
+github fsprojects/FSharp.TypeProviders.SDK src/ProvidedTypes.fsi
+github fsprojects/FSharp.TypeProviders.SDK src/ProvidedTypes.fs
+github fsprojects/FSharp.TypeProviders.SDK fsc.props

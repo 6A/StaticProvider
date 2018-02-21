@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp2.0</TargetFrameworks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="..\paket-files\fsprojects\FSharp.TypeProviders.SDK\fsc.props">
+      <Paket>True</Paket>
+      <Link>paket-files/fsc.props</Link>
+    </Content>
+    <Compile Include="StaticProvider.Tests.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../StaticProvider/StaticProvider.fsproj" />
+  </ItemGroup>
+
+  <Import Project="..\.paket\Paket.Restore.targets" />
+
+</Project>
